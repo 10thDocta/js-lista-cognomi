@@ -5,9 +5,6 @@ const listSection = document.getElementById("list_section");
 // definisco le variabili dei bottoni
 const surnameBtn = document.getElementById("cognome_btn");
 
-/* ------------- 
-      EMAIL CHECK
- -------------*/
 
 // funzione per il reset
 const reset = () => {
@@ -17,7 +14,10 @@ const reset = () => {
 
 // funzione per messaggio di errore in caso di dati non nel formato corretto
 const checkInput = string => {
-  if (string.length == 0) {
+
+  let stringToNumber = parseInt(string, 10);
+
+  if (string.length == 0 || !isNaN(stringToNumber)) {
     hideMessageError.classList.toggle("hide");
     return false;
   } else {
