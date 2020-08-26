@@ -25,7 +25,7 @@ const checkInput = string => {
     }
 };
 
-// funzione per calcolare il prezzo del biglietto
+// funzione 
 const addToArray = () => {
 
     // faccio un reset appena viene invocata la funzione
@@ -50,15 +50,6 @@ const addToArray = () => {
         let list = document.getElementById("list");
         let inner = "";
         let position = 0;
-
-        // arr.forEach(e => {
-        //     position++;
-        //     if (e === surnameCap) {
-        //         cont += "<li>" + e + " >> la posizione nella lista è " + position + "</li>"
-        //     } else {
-        //         cont += "<li>" + e + "</li>"
-        //     }
-        // });
 
         arr.forEach(e => {
             position++;

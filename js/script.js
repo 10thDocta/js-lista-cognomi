@@ -25,7 +25,7 @@ const checkInput = string => {
   }
 };
 
-// funzione per calcolare il prezzo del biglietto
+// funzione
 const addToArray = () => {
 
   // faccio un reset appena viene invocata la funzione
